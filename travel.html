@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="成都旅行攻略，规划交通、行程与游览体验。">
+    <title>成都攻略 — 蜀韵・成都</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- 全站统一固定页头；通过 aria-current 为当前“攻略”栏目显示金色状态 -->
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="蜀韵・成都首页"><span class="brand-mark" aria-hidden="true">蜀</span><span class="brand-name">蜀韵・成都</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="主导航">
+            <a href="index.html">首页</a><a href="food.html">美食</a><a href="sights.html">景点</a><a href="culture.html">文化</a><a href="travel.html" aria-current="page">攻略</a>
+        </nav>
+    </header>
+    <main>
+        <!-- 栏目横幅图片占位：替换 img 的 src 为成都旅行主题图片 -->
+        <section class="page-banner">
+            <img src="https://ts1.tc.mm.bing.net/th/id/R-C.ec066293a8f30f55b4334e0cf64eea45?rik=sFNUDyC9lJcxKg&riu=http%3a%2f%2fn.sinaimg.cn%2fsinacn%2fw640h443%2f20180113%2f2c4c-fyqrewh7229759.jpg&ehk=ozmtD7roZHiMEajf5HmQMnt9c07xXzzuC8HTrjgOwOI%3d&risl=&pid=ImgRaw&r=0" alt="成都旅行主题占位图">
+            <div class="page-intro"><p class="eyebrow">PLAN YOUR JOURNEY</p><h1>慢游成都，恰到好处</h1><p>留一点时间给街巷与偶遇，让旅程不止于打卡。</p></div>
+        </section>
+        <!-- 三日行程卡片：按旅行节奏展示成都城内与近郊的代表体验 -->
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">A THREE-DAY JOURNEY</p>
+                    <h2>把成都，慢慢逛一遍</h2>
+                </div>
+                <p>从城市街巷到青城山水，三天时间留给风景、好味道和不赶路的闲暇。</p>
+            </div>
+            <div class="card-grid">
+                <article class="content-card itinerary-card">
+                    <div class="card-photo">
+                        <!-- 图片占位：建议替换为成都公园或老街实景 -->
+                        <img src="https://ts1.tc.mm.bing.net/th/id/OIP-C.D3GmfKh5i0JtJAmcSMrVwAHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="成都街巷与城市建筑">
+                        <span class="day-badge">DAY 01</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-label">城市漫步 · 人文街巷</p>
+                        <h3>从一杯盖碗茶开始</h3>
+                        <p>上午去人民公园听一曲闲戏，午后穿行宽窄巷子，傍晚沿锦江散步，在街边小馆尝一口川味。</p>
+                        <div class="itinerary-meta"><span>人民公园</span><span>宽窄巷子</span><span>锦江夜色</span></div>
+                    </div>
+                </article>
+                <article class="content-card itinerary-card">
+                    <div class="card-photo">
+                        <!-- 图片占位：建议替换为博物馆、古迹或锦里实景 -->
+                        <img src="https://ts1.tc.mm.bing.net/th/id/R-C.cfa67ab82942cb7d200f3604e95bdc35?rik=xPgspMJ%2fXGPtfg&riu=http%3a%2f%2fd.ifengimg.com%2fq100%2fimg1.ugc.ifeng.com%2fnewugc%2f20191112%2f18%2fwemedia%2f52620bea6179d1570c4ba04b152af077cf561ccb_size170_w1280_h921.jpg&ehk=SSEbA38bqJJqfDN2pgL3ymsIx8E1QhqI9txXiWdf2FE%3d&risl=&pid=ImgRaw&r=0" alt="成都古迹与日落风景">
+                        <span class="day-badge">DAY 02</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-label">古蜀寻踪 · 城南闲游</p>
+                        <h3>在千年文脉里漫行</h3>
+                        <p>走进金沙遗址博物馆，看看古蜀文明留下的奇珍；下午到杜甫草堂寻一份清幽，入夜再逛锦里灯影。</p>
+                        <div class="itinerary-meta"><span>金沙遗址</span><span>杜甫草堂</span><span>锦里</span></div>
+                    </div>
+                </article>
+                <article class="content-card itinerary-card">
+                    <div class="card-photo">
+                        <!-- 图片占位：建议替换为青城山或都江堰实景 -->
+                        <img src="https://pic3.zhimg.com/v2-2590d6ae2effeab27ce0ad30b5faddbf_r.jpg" alt="青山绿意与近郊山水">
+                        <span class="day-badge">DAY 03</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-label">近郊山水 · 清凉一日</p>
+                        <h3>把时间还给山风</h3>
+                        <p>留出一整天前往都江堰与青城山，看看古老水利工程，听林间鸟鸣。建议提前确认交通与景区预约。</p>
+                        <div class="itinerary-meta"><span>都江堰</span><span>青城山</span><span>一日往返</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 出行实用信息：用轻量信息卡整理交通、天气和预约建议 -->
+        <section class="travel-guide">
+            <div class="section">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-kicker">MAKE IT EASY</p>
+                        <h2>出发前，收好这份小贴士</h2>
+                    </div>
+                    <p>做好一点点准备，把更多时间留给成都的风景与日常。</p>
+                </div>
+                <div class="guide-grid">
+                    <article class="guide-item">
+                        <span class="guide-number">01</span>
+                        <div><h3>市内出行</h3><p>地铁适合跨区移动，老街与公园更适合步行慢逛；热门时段可预留弹性时间。</p></div>
+                    </article>
+                    <article class="guide-item">
+                        <span class="guide-number">02</span>
+                        <div><h3>近郊安排</h3><p>都江堰、青城山建议单独安排一天，出发前确认交通班次、景区开放及预约要求。</p></div>
+                    </article>
+                    <article class="guide-item">
+                        <span class="guide-number">03</span>
+                        <div><h3>天气穿搭</h3><p>成都天气时有变化，随身带一把轻便雨伞，春秋可准备薄外套，近郊注意保暖。</p></div>
+                    </article>
+                    <article class="guide-item">
+                        <span class="guide-number">04</span>
+                        <div><h3>旅行节奏</h3><p>热门场馆优先查询官方预约信息；每天留一点空白，给茶馆、小巷和偶遇的惊喜。</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 温馨提醒：具体开放时间与预约政策请以官方最新公告为准 -->
+        <section class="feature-band"><div><p class="section-kicker">A GENTLE REMINDER</p><h2>不必赶路，成都就在日常里</h2><p>出行前留意天气与景区公告，热门场馆和景点请通过官方渠道了解最新开放及预约信息。祝你在成都，走得舒心、吃得开心。</p></div></section>
+    </main>
+    <!-- 全站统一页脚：标语、联系方式、版权及备案占位信息 -->
+    <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="index.html">蜀韵・成都</a><p class="footer-slogan">蜀韵成都，一座来了就不想离开的城市</p><nav class="footer-nav" aria-label="页尾导航"><a href="food.html">美食</a><a href="sights.html">景点</a><a href="culture.html">文化</a><a href="travel.html">攻略</a></nav><p class="footer-contact">联系方式：contact@example.com　|　电话：000-0000-0000</p><p class="footer-meta">© 2026 蜀韵・成都　|　备案信息：蜀ICP备00000000号</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="蜀韵・成都，发现成都的美食、风景、人文与慢生活。">
+    <title>蜀韵・成都 — 成都文化旅游</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- 全站统一固定页头：左侧 Logo 占位与站名，右侧栏目导航 -->
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="蜀韵・成都首页">
+            <span class="brand-mark" aria-hidden="true">蜀</span>
+            <span class="brand-name">蜀韵・成都</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">☰</button>
+        <!-- aria-current 标记当前页，样式会自动为首页导航增加金色高亮 -->
+        <nav class="main-nav" aria-label="主导航">
+            <a href="index.html" aria-current="page">首页</a>
+            <a href="food.html">美食</a>
+            <a href="sights.html">景点</a>
+            <a href="culture.html">文化</a>
+            <a href="travel.html">攻略</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 首页全屏轮播区：替换各 img 的 src 即可换成真实成都风光图片 -->
+        <section class="hero" aria-label="成都风光轮播">
+            <!-- 图片链接为示例资源：建议依次替换为成都城市风光、宽窄巷子、锦里图片 -->
+            <div class="hero-slide is-active"><img src="https://ts1.tc.mm.bing.net/th/id/R-C.9c81f4ded4af8fa7adfc28b75521e036?rik=HGplw24dD0L%2bhw&riu=http%3a%2f%2fseopic.699pic.com%2fphoto%2f50105%2f1755.jpg_wh1200.jpg&ehk=QFHIPHxY98ndgQExth5mdO1aWM59HtlA7Hs10KRYbZY%3d&risl=&pid=ImgRaw&r=0" alt="成都城市风光占位图"></div>
+            <div class="hero-slide"><img src="https://ts2.tc.mm.bing.net/th/id/OIP-C.c37LDbr4KckAo__dZTzItwHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="宽窄巷子风格街巷占位图"></div>
+            <div class="hero-slide"><img src="https://img1.qunarzz.com/travel/d5/1603/2e/a060007a3778e2f7.jpg_r_640x426x70_44978a4b.jpg" alt="锦里古街风格景观占位图"></div>
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO CHENGDU</p>
+                <h1>蜀韵・成都</h1>
+                <p class="hero-copy">在烟火与诗意之间，遇见一座来了就不想离开的城市。</p>
+                <a class="text-link" href="travel.html">开启成都之旅　→</a>
+            </div>
+            <!-- 左右箭头与底部圆点共用 script.js 轮播逻辑 -->
+            <button class="carousel-arrow carousel-arrow--previous" type="button" aria-label="切换到上一张">‹</button>
+            <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="切换到下一张">›</button>
+            <div class="carousel-controls" aria-label="轮播图切换">
+                <button class="carousel-dot is-active" type="button" aria-label="第1张轮播图" aria-pressed="true"></button>
+                <button class="carousel-dot" type="button" aria-label="第2张轮播图" aria-pressed="false"></button>
+                <button class="carousel-dot" type="button" aria-label="第3张轮播图" aria-pressed="false"></button>
+            </div>
+        </section>
+
+        <!-- 宣传片视频区：将占位路径替换为项目内或可访问的 MP4 视频地址 -->
+       <section class="section">
+    <div class="section-heading">
+        <div>
+            <p class="section-kicker">A CITY OF LEISURE</p>
+            <h2>成都宣传片</h2>
+        </div>
+        <p>透过光影，感受古蜀底蕴与当代活力交织的天府之城。</p>
+    </div>
+    <div class="video-layout">
+        <div class="video-frame">
+            <iframe 
+                src="https://player.bilibili.com/player.html?bvid=BV1RV411o7dY&page=1&high_quality=1"
+                width="100%"
+                height="480"
+                frameborder="0"
+                allowfullscreen
+                allow="autoplay; encrypted-media"
+                aria-label="成都城市风光宣传视频">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+        <!-- 成都简介：可在此更新约百字的城市文旅介绍 -->
+        <section class="section city-intro">
+            <p class="section-kicker">THE LAND OF ABUNDANCE</p>
+            <h2>天府成都</h2>
+            <p class="video-note">成都，古称锦官城，三千年城址不移，沉淀着深厚的古蜀文脉。这里有都江堰的千年智慧、宽窄巷子的旧时光，也有茶馆里的闲适与街巷间的麻辣鲜香。雪山、绿道、古街与新潮生活在此相映。走进成都，放慢脚步，在烟火日常中感受一座来了就不想离开的城市。</p>
+        </section>
+    </main>
+
+    <!-- 全站统一页脚：标语、联系方式、版权及备案占位信息 -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-brand" href="index.html">蜀韵・成都</a>
+            <p class="footer-slogan">蜀韵成都，一座来了就不想离开的城市</p>
+            <nav class="footer-nav" aria-label="页尾导航">
+                <a href="food.html">美食</a><a href="sights.html">景点</a><a href="culture.html">文化</a><a href="travel.html">攻略</a>
+            </nav>
+            <p class="footer-contact">联系方式：contact@example.com　|　电话：000-0000-0000</p>
+            <p class="footer-meta">© 2026 蜀韵・成都　|　备案信息：蜀ICP备00000000号</p>
+        </div>
+    </footer>
+</body>
+</html>

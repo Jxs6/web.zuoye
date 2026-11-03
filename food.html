@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="品味成都美食，从麻辣鲜香到街巷小吃。">
+    <title>成都美食 — 蜀韵・成都</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- 全站统一固定页头；通过 aria-current 为当前“美食”栏目显示金色状态 -->
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="蜀韵・成都首页"><span class="brand-mark" aria-hidden="true">蜀</span><span class="brand-name">蜀韵・成都</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="主导航">
+            <a href="index.html">首页</a><a href="food.html" aria-current="page">美食</a><a href="sights.html">景点</a><a href="culture.html">文化</a><a href="travel.html">攻略</a>
+        </nav>
+    </header>
+    <main>
+        <!-- 栏目横幅图片占位：替换 img 的 src 为成都美食主题图片 -->
+        <section class="page-banner">
+            <img src="https://n.sinaimg.cn/sinakd10119/216/w640h376/20220725/21f9-e2292602a8513fc099440305f999a9af.jpg" alt="成都美食主题占位图">
+            <div class="page-intro"><p class="eyebrow">TASTE OF CHENGDU</p><h1>一城烟火，百味成都</h1><p>从滚烫火锅到街边小吃，在麻辣鲜香里尝遍地道蜀味。</p></div>
+        </section>
+        <!-- 美食主体内容：卡片可按需增删，替换图文为实际美食介绍 -->
+        <section class="section">
+            <div class="section-heading"><div><p class="section-kicker">LOCAL FLAVORS</p><h2>成都味觉地图</h2></div><p>热辣、鲜香、回味悠长，成都的美味藏在每一条熟悉的街巷里。</p></div>
+            <div class="card-grid">
+                <article class="content-card"><img src="https://ts1.tc.mm.bing.net/th/id/R-C.85cf37b83732b32a637ef52ceecda798?rik=U1rrOriAUaKs4A&riu=http%3a%2f%2fimg1.bala.cc%2fallimg%2f2503%2f222Q1L20-0.jpg&ehk=MnD%2bJSEL0HnXWcbIXnSVMJJNf9fyJZqaeBiQTJgQOZ0%3d&risl=&pid=ImgRaw&r=0" alt="热气腾腾的火锅"><div class="card-body"><p class="card-label">麻辣鲜香</p><h3>成都火锅</h3><p>红汤翻滚，毛肚脆嫩。围炉而坐，是成都人最热闹的相聚方式。</p></div></article>
+                <article class="content-card"><img src="https://qna.smzdm.com/202309/27/65141990152572441.jpg_fo742.jpg" alt="经典汉堡与小食"><div class="card-body"><p class="card-label">街头小吃</p><h3>巷子里的滋味</h3><p>钟水饺、担担面、蛋烘糕……一口一味，藏着最鲜活的市井记忆。</p></div></article>
+                <article class="content-card"><img src="https://ts4.tc.mm.bing.net/th/id/OIP-C.g33z_mb5t2CFgsRbBy9OFwHaFk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="中式面食"><div class="card-body"><p class="card-label">地道家常</p><h3>川菜百味</h3><p>一菜一格，百菜百味。麻婆豆腐与回锅肉，演绎川菜的醇厚底色。</p></div></article>
+            </div>
+        </section>
+        <section class="feature-band"><div><h2>寻味小贴士</h2><p>初次尝试川味，可以从微辣开始；热门餐馆建议错峰前往，街边小店常有意想不到的地道惊喜。</p></div></section>
+    </main>
+    <!-- 全站统一页脚：标语、联系方式、版权及备案占位信息 -->
+    <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="index.html">蜀韵・成都</a><p class="footer-slogan">蜀韵成都，一座来了就不想离开的城市</p><nav class="footer-nav" aria-label="页尾导航"><a href="food.html">美食</a><a href="sights.html">景点</a><a href="culture.html">文化</a><a href="travel.html">攻略</a></nav><p class="footer-contact">联系方式：contact@example.com　|　电话：000-0000-0000</p><p class="footer-meta">© 2026 蜀韵・成都　|　备案信息：蜀ICP备00000000号</p></div></footer>
+</body>
+</html>

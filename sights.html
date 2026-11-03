@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="探索成都景点，走进古蜀文明与自然风光。">
+    <title>成都景点 — 蜀韵・成都</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- 全站统一固定页头；通过 aria-current 为当前“景点”栏目显示金色状态 -->
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="蜀韵・成都首页"><span class="brand-mark" aria-hidden="true">蜀</span><span class="brand-name">蜀韵・成都</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="主导航">
+            <a href="index.html">首页</a><a href="food.html">美食</a><a href="sights.html" aria-current="page">景点</a><a href="culture.html">文化</a><a href="travel.html">攻略</a>
+        </nav>
+    </header>
+    <main>
+        <!-- 栏目横幅图片占位：替换 img 的 src 为成都景点主题图片 -->
+        <section class="page-banner">
+            <img src="https://www.shuomingshu.cn/wp-content/uploads/images/2023/03/17/f28d5d986a8d4ccd8062863fa715dcc6_xqsakqq32vk.jpg" alt="成都景点主题占位图">
+            <div class="page-intro"><p class="eyebrow">EXPLORE CHENGDU</p><h1>山水之间，锦城风华</h1><p>穿行千年古迹，漫步城市绿道，发现成都的多面风景。</p></div>
+        </section>
+        <!-- 景点主体内容：卡片可按需增删，替换为景区实景与游览介绍 -->
+        <section class="section">
+            <div class="section-heading"><div><p class="section-kicker">MUST-SEE PLACES</p><h2>锦城好风光</h2></div><p>古蜀遗址、历史街巷与近郊山水，共同绘出一幅悠然的天府画卷。</p></div>
+            <div class="card-grid">
+                <article class="content-card"><img src="https://img.pconline.com.cn/images/upload/upc/tx/itbbs/2004/14/c9/202939686_1586843276596.jpg" alt="古建筑与城市街景"><div class="card-body"><p class="card-label">历史街巷</p><h3>宽窄巷子</h3><p>青砖灰瓦、院落深深，在老成都的街巷肌理中慢慢感受生活。</p></div></article>
+                <article class="content-card"><img src="https://youimg1.c-ctrip.com/target/0102t120008k4r7rx40F6_W_10000_1200.jpg?proc=autoorient" alt="清晨山水风光"><div class="card-body"><p class="card-label">古蜀文明</p><h3>金沙遗址博物馆</h3><p>走近太阳神鸟与古蜀珍宝，开启一段穿越三千年的文明之旅。</p></div></article>
+                <article class="content-card"><img src="https://img1.qunarzz.com/travel/d7/1705/e3/d9d9a7ae85351fb5.jpg_r_1360x1360x95_37281ecc.jpg" alt="青山与自然风景"><div class="card-body"><p class="card-label">自然人文</p><h3>都江堰·青城山</h3><p>感受千年水利智慧，走进青城幽静山林，拥抱成都周边的自然。</p></div></article>
+            </div>
+        </section>
+        <section class="feature-band"><div><h2>把脚步交给风景</h2><p>市区景点适合搭乘地铁与公交串联，前往都江堰、青城山可预留一整天，出发前请留意开放时间与预约信息。</p></div></section>
+    </main>
+    <!-- 全站统一页脚：标语、联系方式、版权及备案占位信息 -->
+    <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="index.html">蜀韵・成都</a><p class="footer-slogan">蜀韵成都，一座来了就不想离开的城市</p><nav class="footer-nav" aria-label="页尾导航"><a href="food.html">美食</a><a href="sights.html">景点</a><a href="culture.html">文化</a><a href="travel.html">攻略</a></nav><p class="footer-contact">联系方式：contact@example.com　|　电话：000-0000-0000</p><p class="footer-meta">© 2026 蜀韵・成都　|　备案信息：蜀ICP备00000000号</p></div></footer>
+</body>
+</html>
